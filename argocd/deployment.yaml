@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: isasubhi/my-nginx-container:1.2
+        image: isasubhi/argocd-app:1.1
         ports:
         - containerPort: 80
