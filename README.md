@@ -34,12 +34,12 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.pas
  - Repository URL: https://github.com/IsaSubhi/ArgoCD_Project.git
  - Revision: HEAD
  - Folder path: argocd
- - namespace: myappargocd-ns
+ - Namespace: myappargocd-ns
  - Create the namespace if it doesn't exist = true
- - automated: selfHeal: true , prune: true
+ - Automated: selfHeal: true , prune: true
 
 #### - Access the Application:
- - forward the local port to the service port of the deployment:
+ - Forward the local port to the service port of the deployment:
 ```
 kubectl -n myappargocd-ns port-forward service/argocd-deployment-service 8081
 ```
