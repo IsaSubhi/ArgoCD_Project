@@ -1,4 +1,4 @@
-# Welcome to my DevOps Project
+# Welcome to my CI/CD ArgoCD Project
 ## Overview
 The Project demonstrates a CI/CD pipeline using Jenkins, Github, Docker, Kubernetes and ArgoCD. the code gets pulled from GitHub by a Jenkins trigger, it creates a Dockerfile with the code [(index.html)](index.html) and uploads it to DockerHub. Jenkins then deploys the [ArgoCD_app.yaml](argocd_app.yaml) file to create the Kubernetes namespace and deploys the [deployment.yaml](./argocd/deployment.yaml) and [service.yaml](./argocd/service.yaml) from [argocd](./argocd/) directory. The cluster then can be monitored and managed by the ArgoCD.
 
